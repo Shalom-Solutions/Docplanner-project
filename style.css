@@ -84,10 +84,10 @@ body .main .card-contain .card {
 body .main .card-contain .card .card-body {
   border-radius: 10px;
   background-color: #00ccb1;
-  padding: 2rem;
-  border: none;
   height: 354px;
   color: white;
+  padding: 2em 2em 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,7 +98,6 @@ body .main .card-contain .card .card-body .cards__items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.2s ease 0s;
   border-radius: 10px;
 }
 body .main .card-contain .card .card-body .choose {
@@ -114,6 +113,10 @@ body .main .card-contain .card .card-body .choose select {
   font-size: 1.1rem;
   text-decoration: underline;
   padding-right: 1rem;
+  outline: #00ccb1;
+}
+body .main .card-contain .card .card-body .choose select:focus {
+  outline: none;
 }
 body .main .card-contain .card .card-body1 {
   border-radius: 10px;
@@ -133,7 +136,6 @@ body .main .card-contain .card .card-body1 .cards__items {
   flex-direction: column;
   color: white;
   justify-content: space-between;
-  transition: all 0.2s ease 0s;
   border-radius: 10px;
 }
 body .main .card-contain .card .card-body1 .choose {
@@ -149,6 +151,9 @@ body .main .card-contain .card .card-body1 .choose select {
   font-size: 1.1rem;
   text-decoration: underline;
   padding-right: 1rem;
+}
+body .main .card-contain .card .card-body1 .choose select:focus {
+  outline: none;
 }
 body .main .card-contain .card .card-body2 {
   border-radius: 10px;
@@ -167,7 +172,6 @@ body .main .card-contain .card .card-body2 .cards__items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.2s ease 0s;
   border-radius: 10px;
 }
 body .main .card-contain .card .card-body2 .cards__itemsh5 {
@@ -187,6 +191,9 @@ body .main .card-contain .card .card-body2 .choose select {
   text-decoration: underline;
   padding-right: 1rem;
   margin-top: 1rem;
+}
+body .main .card-contain .card .card-body2 .choose select:focus {
+  outline: none;
 }
 body .main .culture {
   display: grid;
@@ -1188,4 +1195,31 @@ body footer {
     padding: 1rem;
     font-size: 1rem;
   }
+}
+body .fade-elements {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease 0.1s;
+}
+body .visible-elements {
+  transition: all 0.3s ease 0.2s;
+  transform: translate(0);
+  opacity: 1;
+}
+body .fade-elements2 {
+  transition-delay: 0s;
+  transition-duration: 0;
+}
+body .fade-elements3 {
+  transition-delay: 0.5s;
+  transform: 1s;
+}
+body .fade-elements4 {
+  transition-delay: 2s;
+  transition-duration: 2s;
+}
+body .card-fade-elements {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease 0.1s;
 }/*# sourceMappingURL=style.css.map */

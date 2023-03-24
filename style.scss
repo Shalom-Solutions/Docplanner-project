@@ -73,13 +73,14 @@ body{
                 .card-body{
                     border-radius: 10px;
                     background-color: #00ccb1;
-                    padding: 2rem;
-                    border: none;
                     height: 354px;
                     color: white;
+                    padding: 2em 2em 0;
+                    overflow: hidden;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    //transition: all .2s ease 0s;
 
                         .cards__items {
                             padding: 1rem;
@@ -87,7 +88,7 @@ body{
                             display: flex;
                             flex-direction: column;
                             justify-content: space-between;
-                            transition: all .2s ease 0s;
+                           // transition: all .2s ease 0s;
                             border-radius: 10px;  
                         }
                     .choose {
@@ -103,6 +104,11 @@ body{
                             font-size: 1.1rem;
                             text-decoration: underline;
                             padding-right: 1rem;
+                            outline: #00ccb1;
+
+                            &:focus {
+                                outline:none;
+                            }
                         }
 
                     }
@@ -119,6 +125,7 @@ body{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    //transition: all .2s ease .25s;
 
                     .cards__items {
                             
@@ -128,7 +135,7 @@ body{
                         flex-direction: column;
                         color: white;
                         justify-content: space-between;
-                        transition: all .2s ease 0s;
+//                      transition: all .2s ease 0s;
                         border-radius: 10px;
 
                     }
@@ -145,6 +152,10 @@ body{
                         font-size: 1.1rem;
                         text-decoration: underline;
                         padding-right: 1rem;
+
+                        &:focus {
+                            outline: none;
+                        }
                     }
 
                 }
@@ -160,6 +171,7 @@ body{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                   // transition: all .2s ease 5s;
 
                     .cards__items {
                             
@@ -167,9 +179,8 @@ body{
                         overflow: hidden;
                         display: flex;
                         flex-direction: column;
-                    
                         justify-content: space-between;
-                        transition: all .2s ease 0s;
+                        //transition: all .2s ease 0s;
                         border-radius: 10px;
 
                         
@@ -193,6 +204,10 @@ body{
                         text-decoration: underline;
                         padding-right: 1rem;
                         margin-top: 1rem;
+
+                        &:focus {
+                            outline:none;
+                        }
                     }
 
                 }
@@ -1309,6 +1324,38 @@ footer {
         padding: 1rem;
         font-size: 1rem;
     }
+}
+.fade-elements {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease .1s
+}
+.visible-elements {
+    transition: all .3s ease .2s;
+    transform: translate(0);
+    opacity: 1;
+}
+
+
+.fade-elements2 {
+    transition-delay: 0s;
+    transition-duration: 0;
+}
+
+.fade-elements3 {
+    transition-delay: .5s;
+    transform: 1s;
+}
+
+.fade-elements4 {
+    transition-delay: 2s;
+    transition-duration: 2s;
+}
+
+.card-fade-elements {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease .1s
 }
 
 }
